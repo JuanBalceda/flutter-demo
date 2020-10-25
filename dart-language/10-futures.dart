@@ -1,7 +1,8 @@
 void main() {
   print('method start');
-  var response = fakeHttpGet('http://api.com/resource')
-      .then((data) => print(data));
+
+  fakeHttpGet('http://api.com/resource').then((data) => print(data));
+
   print('method end');
 }
 
